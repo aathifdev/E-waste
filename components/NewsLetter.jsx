@@ -7,7 +7,7 @@ const NewsLetter = () => {
         Subscribe now & get 20% off
       </h1>
       <p className="md:text-base text-gray-500/80 pb-8">
-      EcoTrde is your reliable platform for buying and recycling electronic waste.
+      EcoTrade is your reliable platform for buying and recycling electronic waste.
       </p>
       <div className="flex items-center justify-between max-w-2xl w-full md:h-14 h-12">
         <input

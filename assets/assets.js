@@ -1,5 +1,10 @@
 import logo from "./logo.svg";
-import ecotrade_logo  from './ecotrade_logo.png'
+import ecotrade_logo  from './ecotrade_logo.png';
+import ewaste_all_image from "./ewaste_all_image.jpg";
+import ewaste_items_image from "./ewaste_all_image.jpg";
+import ewaste_phone_image from "./ewaste_all_image.jpg";
+import ewaste_mountain_image from "./ewaste_mountain_image.png"
+import ewaste_laptop_image from "./ewaste_laptop_image.png"
 import search_icon from "./search_icon.svg";
 import user_icon from "./user_icon.svg";
 import cart_icon from "./cart_icon.svg";
@@ -53,6 +58,11 @@ import product_details_page_apple_earphone_image5 from "./product_details_page_a
 export const assets = {
   logo,
   ecotrade_logo,
+  ewaste_all_image,
+  ewaste_items_image,
+  ewaste_phone_image,
+  ewaste_mountain_image,
+  ewaste_laptop_image,
   search_icon,
   user_icon,
   cart_icon,

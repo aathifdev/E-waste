@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="w-4/5">
           <Image className="w-28 md:w-32" src={assets.ecotrade_logo} alt="logo" />
           <p className="mt-6 text-sm">
-            EcoTrde is your reliable platform for buying and recycling electronic waste. 
+            EcoTrade is your reliable platform for buying and recycling electronic waste. 
             We connect people and businesses to safely dispose of old electronics while 
             promoting environmental responsibility. Join us in reducing e-waste and 
             creating a cleaner, greener, and more sustainable future.
