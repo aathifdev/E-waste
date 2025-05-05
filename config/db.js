@@ -8,8 +8,8 @@ if (!cached) {
 
 async function connectDB() {
 
-    if (cached.com ) {
-        return cached.com
+    if (cached.conn ) {
+        return cached.conn
     }
 
     if (!cached.promise ) {
