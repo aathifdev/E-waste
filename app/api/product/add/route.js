@@ -3,6 +3,7 @@ import { getAuth } from "@clerk/nextjs/server";
 import authSeller from "@/lib/authSeller";
 import { NextResponse } from "next/server";
 import { resolve } from "styled-jsx/css";
+import connectDB from "@/config/db";
 
 // Configure Cloudinary
 cloudinary.config({
@@ -60,9 +61,22 @@ export async function POST(request) {
         
         const image = result.map(result => result.secure_url)
 
+        await connectDB()
+        const newProduct = await product.create({
+            userId,
+            name,
+            description,
+            category,
+            price: Number(price),
+            offerPrice: Number(offerPrice),
+            image,
+            date: Date.now(),
+        })
+
+
     }
     catch (error) {
-
+        NextResponse.json({ success: false, messag: 'error.message'})
     }
     
 }
