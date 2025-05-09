@@ -14,7 +14,7 @@
     "cloudinary": "^2.6.0",
     "inngest": "^3.35.1",
     "mogoose": "^0.0.1-security",
-    "mongoose": "^8.14.1",
+    "mongoose": "^8.14.2",
     "next": "15.2.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
