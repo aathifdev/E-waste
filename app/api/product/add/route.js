@@ -30,7 +30,6 @@ export async function POST(request) {
         const category = formData.get('category');
         const price = formData.get('price');
         const offerPrice = formData.get('offerPrice');
-
         const files = formData.getAll('images');
 
         if (!files || files.length === 0) {

@@ -1,19 +1,21 @@
 {
-  "name": "ecommerce-inngest",
-  "version": "0.1.0",
+  "name": "ecotrade-platform",
+  "version": "0.2.0",
+  "type": "module",
+  "description": "E-waste recycling marketplace with Inngest workflows",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test:db": "node config/userTest.js"
   },
   "dependencies": {
     "@clerk/nextjs": "^6.18.4",
     "axios": "^1.9.0",
     "cloudinary": "^2.6.0",
     "inngest": "^3.35.1",
-    "mogoose": "^0.0.1-security",
     "mongoose": "^8.14.2",
     "next": "15.2.3",
     "react": "^19.0.0",

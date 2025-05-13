@@ -1,3 +1,4 @@
+
 import mongoose from "mongoose";
 
 let cached = global.mongoose
@@ -17,7 +18,9 @@ async function connectDB() {
             bufferCommands:false
         }
 
-        cached.promise = mongoose.connect(`${process.env.MONGODB_URI}/ecotrade`,opts).then( mongoose =>{
+        const mongoUri = "mongodb+srv://ecotrade:Aathifahd2002@cluster0.rbdxrrl.mongodb.net"
+
+        cached.promise = mongoose.connect(mongoUri, opts).then((mongoose) => {
             return mongoose
         })
     }

@@ -1,5 +1,5 @@
 'use client'
-import { productsDummyData, userDummyData } from "@/assets/assets";
+import { productsDummyData } from "@/assets/assets";
 import { useAuth, useUser } from "@clerk/nextjs";
 import axios from "axios";
 import { useRouter } from "next/navigation";
@@ -30,7 +30,7 @@ export const AppContextProvider = (props) => {
 
     const fetchUserData = async () => {
         try {
-            if (user?.publicMetadata?.role === 'seller') {
+            if (user.publicMetadata.role === "seller") {
                 setIsSeller(true);
             }
 
