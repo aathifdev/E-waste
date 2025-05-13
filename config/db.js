@@ -18,7 +18,7 @@ async function connectDB() {
             bufferCommands:false
         }
 
-        const mongoUri = "mongodb+srv://ecotrade:Aathifahd2002@cluster0.mongodb.net/ecotrade?retryWrites=true&w=majority"
+const mongoUri = "mongodb+srv://ecotrade:Aathifahd2002@cluster0.rbdxrrl.mongodb.net/ecotrade?retryWrites=true&w=majority";
 
         cached.promise = mongoose.connect(mongoUri, opts).then((mongoose) => {
             return mongoose
