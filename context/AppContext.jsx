@@ -13,7 +13,7 @@ export const useAppContext = () => {
 };
 
 export const AppContextProvider = (props) => {
-    const currency = process.env.NEXT_PUBLIC_CURRENCY;
+    const currency = process.env.NEXT_PUBLIC_aCURRENCY;
     const router = useRouter();
 
     const { user } = useUser();
@@ -35,6 +35,7 @@ export const AppContextProvider = (props) => {
             }
 
             const token = await getToken();
+
 
             const { data } = await axios.get('/api/user/data', {
                 headers: { Authorization: `Bearer ${token}` },
